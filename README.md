@@ -2,7 +2,7 @@
 
 After deploying configuration from this repo you get the following:
 
-- two BIG-IP VMs (15.1.0.4) in different availability zones in AWS
+- two BIG-IP VMs (15.1.0.4, PAYG image) in different availability zones in AWS
 - Declarative Onboarding (DO) is installed on each VM
 - DO declaration is passed to cloud-init via Terraform to onboard BIG-IPs (VLANs. self-ips, etc.)
 - DSC is configured using the following tmsh commands in cloudinit.txt file (since DO is not currently able to configure cross-AZ clusters: https://github.com/F5Networks/f5-declarative-onboarding/issues/141):
@@ -17,6 +17,11 @@ tmsh run /cm config-sync ${haDirection} failoverGroup
 ```
 git clone https://github.com/y-myk/terraform-aws-ha.git
 cd terraform-aws-ha
+```
+
+Modify "upassword" and "ec2_key_name" variables in variables.tf.
+
+```
 terraform init
 terraform plan
 terraform apply

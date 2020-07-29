@@ -11,11 +11,11 @@ variable uname {
 }
 
 variable upassword {
-  default = "Ics0admin"
+  default = "Fr5Tyh7iKl"
 }
 
 variable licensekey {
-  default = ["DVZIN-KYDWZ-OIKHH-JFQHQ-QILXQIO", "DVZIN-KYDWZ-OIKHH-JFQHQ-QILXQIH"]
+  default = ["XXXXX-KYDWZ-OIKHH-YYYYY-QILXQIO", "XXXXX-KYDWZ-OIKHH-YYYYY-QILXQIH"]
 }
 
 variable "region" {
