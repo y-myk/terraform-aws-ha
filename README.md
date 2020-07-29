@@ -29,4 +29,4 @@ cloud-init "write_files" and "runcmd" modules are used to create default route i
 DO configuration is composed from the following two resources:
 
 Cloud-init reference: https://clouddocs.f5.com/cloud/public/v1/shared/cloudinit.html
-DO declaration to setup DSC: https://clouddocs.f5.com/products/extensions/f5-declarative-onboarding/latest/bigip-examples.html#clustered-declaration
+DO declaration to setup DSC: https://clouddocs.f5.com/products/extensions/f5-declarative-onboarding/latest/bigip-examples.html
